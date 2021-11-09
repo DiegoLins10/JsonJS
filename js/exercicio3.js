@@ -46,27 +46,7 @@ fetch (url)
 
 
             });             
-            var pessoasGeral = 0
-            var pessoasMasc = 0
-            var pessoasFem = 0
-            var soma = 0
-            results.forEach(function(results){
-                if(results.dob.age < 40){
-                    pessoasGeral++
-                    
-                    if(results.gender == 'male'){
-                        pessoasMasc++
-                    }else{
-                        pessoasFem++                       
-                        soma = parseInt(results.dob.age) + parseInt(results.dob.age)
-                        
-                        
-                        
-                    }
-                }
-                
-            });
-
+           
     })
             .catch(function(error) {
                 console.log(error);    
